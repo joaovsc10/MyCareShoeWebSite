@@ -19,7 +19,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
   session_start();
   if(!isset($_SESSION['id']))
 {
-	
+
     // restrição para o caso de inserir o endereço sem ter feito login
     header('Location: log_in.php');
     exit();
@@ -28,13 +28,14 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 		header('Location:index.php');
 	exit();
 	}
+}
 ?>
-    
+
   <body>
-    
+
         <?php include('header.html')?>
-        
-        
+
+
       <section class="section section-intro context-dark">
         <div class="intro-bg" style="background-color:powderblue;" background-position: top center;></div>
         <div class="container">
@@ -46,10 +47,10 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
           </div>
         </div>
       </section>
-      
+
       <section class="section section-md bg-xs-overlay " style="background-color:gainsboro;;background-size:cover">
-        <div class="container" >  
-		
+        <div class="container" >
+
 		<div class="row row-50 justify-content-center">
 			 <form id="form" align-content="center">
 			  <label for="start_end">Choose start and end date:</label>
@@ -57,9 +58,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 			  <input type="datetime-local" id="end_date" name="end_date">
 			  <input type="submit" id="submit" value="Search">
 			</form>
-			
+
 			</div>
-			
+
 			<div class="row row-50 justify-content-center" style="display:none" id="1">
 			<canvas id="cadencePlot" style="width:100%;max-width:800px"></canvas>
 			<canvas id="balancePlot" style="width:100%;max-width:800px"></canvas>
@@ -74,9 +75,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 			<canvas id="rightStancePlot" style="width:100%;max-width:800px"></canvas>
         </div>
 		</div>
-		
+
 		</section>
-        
+
     <?php include('footer.html')?>
 
     <div class="snackbars" id="form-output-global"></div>
@@ -88,19 +89,19 @@ $("#form").submit(function(e){
 
 	$('#1').toggle();
  });
- 
+
 	</script>
 	<script>
 	var cadencePlot, balancePlot, stepsPlot, leftFootPlot, rightFootPlot, leftTemperaturePlot, rightTemperaturePlot, leftHumidityPlot, rightHumidityPlot, leftStancePlot, rightStancePlot;
 	var array=[cadencePlot, balancePlot, stepsPlot, leftFootPlot, rightFootPlot, leftTemperaturePlot, rightTemperaturePlot, leftHumidityPlot, rightHumidityPlot, leftStancePlot, rightStancePlot];
-	
+
 	$("#form").submit(function(e) {
-	
-	
+
+
 	var arrayPlotName=["cadencePlot", "balancePlot",  "stepsPlot", "leftFootPlot", "rightFootPlot", "leftTemperaturePlot", "rightTemperaturePlot", "leftHumidityPlot", "rightHumidityPlot", "leftStancePlot", "rightStancePlot"];
 	var arrayPlotTitle=["Evolution of cadence over time", "Evolution of balance over time", "Evolution of steps over time", "Evolution of left foot sensors values over time", "Evolution of right foot sensors values over time", "Evolution of left foot temperature values over time", "Evolution of right foot temperature values over time", "Evolution of left foot humidity values over time", "Evolution of right foot humidity values over time", "Evolution of left foot stance time values over time", "Evolution of right foot stance time values over time"]
 	var arrayYLabels=["Cadence", "Percentage of left foot contribution to total pressure", "Steps", "Pressure (kPa)", "Pressure (kPa)", "Temperature (ºC)", "Temperature (ºC)", "Humidity (%)", "Humidity (%)", "Time (seconds)", "Time (seconds)"];
-	
+
 
 	for(var i=0;i<array.length;i++){
 
@@ -111,11 +112,11 @@ $("#form").submit(function(e){
 
 		setPlots(arrayPlotName[i], arrayYLabels[i], arrayPlotTitle[i]);
 	}
-	
-	
+
+
 	function setPlots(plotName, yLabel, plotTitle){
-		
-		
+
+
 		array[i] = new Chart(plotName, {
 		  type: "line",
 		  data: {
@@ -144,7 +145,7 @@ $("#form").submit(function(e){
 		  }
 });
 	}
-	
+
 
 		function updateChartData(data){
   var newYDataCadence=[];
@@ -155,30 +156,30 @@ $("#form").submit(function(e){
   var newXDataSteps=[];
   var newYDataLeftStance=[];
   var newYDataRightStance=[];
-  
-  
-  
+
+
+
   for(var i=0;i<data.records.length;i++){
      newYDataCadence.push(data.records[i].cadence);
 	 newXDataCadence.push(data.records[i].date);
-	 
+
 	 newYDataBalance.push(data.records[i].balance);
 	 newXDataBalance.push(data.records[i].date);
-	 
+
 	 newYDataSteps.push(data.records[i].steps);
 	 newXDataSteps.push(data.records[i].date);
 
 	 newYDataLeftStance.push(data.records[i].left_foot_stance);
 	 newYDataRightStance.push(data.records[i].right_foot_stance);
-	 
-	 
+
+
   }
     array[0].data.datasets[0].data =newYDataCadence;
 	array[0].data.labels=newXDataCadence;
-	
+
 	array[1].data.datasets[0].data =newYDataBalance;
 	array[1].data.labels=newXDataBalance;
-	
+
 	array[2].data.datasets[0].data =newYDataSteps;
 	array[2].data.labels=newXDataSteps;
 
@@ -187,9 +188,9 @@ $("#form").submit(function(e){
 
 	array[10].data.datasets[0].data =newYDataRightStance;
 	array[10].data.labels=newXDataSteps;
-	
-	
-	
+
+
+
   array[0].update();
   array[1].update();
   array[2].update();
@@ -198,45 +199,45 @@ $("#form").submit(function(e){
 
 }
 
-	
 
-		
-   
+
+
+
 
 function updateChartSensorsData(data){
-	
-	
+
+
   var newYDataLeftFoot=[];
   var newXDataLeftFoot=[];
   var newYDataRightFoot=[];
   var newXDataRightFoot=[];
- 
+
   var leftFootTemp=[];
   var rightFootTemp=[];
   var leftFootHumidity=[];
   var rightFootHumidity=[];
-  
+
   for(var i=0;i<data.records.length;i++){
 
-	
+
      newYDataLeftFoot.push((Math.round((Number(data.records[i].S1)+Number(data.records[i].S2)+Number(data.records[i].S3)+Number(data.records[i].S4)+Number(data.records[i].S5)+Number(data.records[i].S6)+Number(data.records[i].S7)+Number(data.records[i].S8)+Number(data.records[i].S9))/9)*10000)/10000);
 	 newXDataLeftFoot.push(data.records[i].date);
-	 
+
 	 newYDataRightFoot.push((Math.round((Number(data.records[i].S10)+Number(data.records[i].S11)+Number(data.records[i].S12)+Number(data.records[i].S13)+Number(data.records[i].S14)+Number(data.records[i].S15)+Number(data.records[i].S16)+Number(data.records[i].S17)+Number(data.records[i].S18))/9)*10000)/10000);
 	 newXDataRightFoot.push(data.records[i].date);
 	 rightFootTemp.push(data.records[i].T2);
 	 leftFootTemp.push(data.records[i].T1);
 	 rightFootHumidity.push(data.records[i].H2);
 	 leftFootHumidity.push(data.records[i].H1);
-	 
+
   }
 
     array[3].data.datasets[0].data =newYDataLeftFoot;
 	array[3].data.labels=newXDataLeftFoot;
-	
+
 	array[4].data.datasets[0].data =newYDataRightFoot;
 	array[4].data.labels=newXDataRightFoot;
-	
+
 	array[5].data.datasets[0].data =leftFootTemp;
 	array[5].data.labels=newXDataRightFoot;
 	array[6].data.datasets[0].data =rightFootTemp;
@@ -245,7 +246,7 @@ function updateChartSensorsData(data){
 	array[7].data.labels=newXDataRightFoot;
 	array[8].data.datasets[0].data =rightFootHumidity;
 	array[8].data.labels=newXDataRightFoot;
-	
+
 
 	array[4].update();
 	array[3].update();
@@ -269,7 +270,7 @@ var end_date_format = document.getElementById('end_date').value.replace("T", " "
 			 updateChartData(data);
 			}
    })
-   
+
    $.ajax({
 			url:"http://localhost/mycareshoeapi/search.php",
 			method:"POST",
