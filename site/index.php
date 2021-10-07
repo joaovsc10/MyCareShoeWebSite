@@ -46,25 +46,25 @@ $nomesessao=$_SESSION['username'];
     </div><a class="section section-banner d-none d-xl-block" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank" style="background-image: url(images/background-02-1920x60.jpg); background-image: -webkit-image-set( url(images/background-02-1920x60.jpg) 1x, url(images/background-02-3840x120.jpg) 2x )"></a>
     <div class="page">
       <header class="section page-header">
-       
-          
-          
+
+
+
           <!--RD Navbar-->
         <div class="rd-navbar-wrap">
           <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
             <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
-            
+
 			<?php include('header_navbar.html')?>
-			
-			
+
+
             <div class="rd-navbar-main-outer">
               <div class="rd-navbar-main">
                 <!--RD Navbar Panel-->
                 <div class="rd-navbar-panel">
                   <!--RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                  
-                    
+
+
                     <!--Barra de separadores-->
                 </div>
                 <div class="rd-navbar-main-element">
@@ -90,32 +90,32 @@ $nomesessao=$_SESSION['username'];
           </nav>
         </div>
       </header>
-        
-        
-        
-        
+
+
+
+
       <!--Secção Inicial-->
       <section class="section main-section parallax-scene-js" style="background-color:powderblue;">
         <div class="container">
           <div class="row justify-content-center">
-    
+
               <div class="main-decorated-box text-center text-xl-left">
                 <h1 class="text-white text-xl-center wow slideInRight" data-wow-delay=".3s"><span class="big font-weight-bold d-inline-flex offset-right-170">My Care Shoe</span>
                 <div class="decorated-subtitle text-italic text-white wow slideInLeft">Welcome back, <?php
                   echo $nomesessao;
                   ?></div>
-				
+
             </div>
-              
+
               <!--Botão para descer ate as info dos pacientes-->
             <div class="col-12 text-center offset-top-75" data-wow-delay=".2s"><a class="button-way-point d-inline-block text-center d-inline-flex flex-column justify-content-center" href="#" data-custom-scroll-to="search"><span class="fa-chevron-down"></span></a></div>
             </div>
-            
+
         </div>
-          
-          
+
+
          <!--Aqueles triângulos que se mexem-->
-          
+
         <div class="decorate-layer">
           <div class="layer-1">
             <div class="layer" data-depth=".20"><img src="images/parallax-item-1-563x532.png" alt="" width="563" height="266"/>
@@ -143,12 +143,12 @@ $nomesessao=$_SESSION['username'];
           </div>
         </div>
       </section>
-        
-        
-        
+
+
+
       <section class="section custom-section position-relative section-md" id="search">
         <div class="container">
-            
+
               <h3 class="text-capitalize devider-left wow fadeInLeft" data-wow-delay=".2s">Search <span class="text-primary"> Patient</span></h3>
              <div class="container section-md">
       <!--    <div class="row justify-content-center">
@@ -167,9 +167,9 @@ $nomesessao=$_SESSION['username'];
 								</div>
 							</div>
 						</form>
-             
-               
-                 </div> 
+
+
+                 </div>
 				      -->
 					  <table class="table table-striped">
 							<thead>
@@ -184,39 +184,38 @@ $nomesessao=$_SESSION['username'];
 
 						<?php
 
-						include('C:/xampp/htdocs/mycareshoe/patient/patient_search_all.php');
-						?>	
+						include('C:/xampp/htdocs/mycareshoeapi/patient/patient_search_all.php');
+						?>
 
  </tbody>
-  </table>						
-										  
+  </table>
+
             </div>
         </div>
-          
-        
-          
+
+
+
       </section>
 
         <?php include('footer.html')?>
-        <?php echo(sha1("1160796"))?>
-     
-	
+
+
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
 	<script>
 			jQuery(document).ready(function($) {
-        
+
     $(".clickable-row").click(function() {
 
-	
+
         window.location = $(this).data("href");
-		
+
     });
 });
 	</script>
-	
-	
+
+
 
   </body>
 </html>

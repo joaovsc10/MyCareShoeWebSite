@@ -11,6 +11,7 @@ if (!isset($_SESSION['id'])) {
         header('Location:index.php');
     exit();
     }
+  }
 ?>
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
@@ -94,7 +95,7 @@ if (!isset($_SESSION['id'])) {
                 </div>
                 <div class="form-group">
                     <label for="height"><strong>Height (in meters)</strong></label>
-                    <input type="number" class="form-control" id="height" placeholder="Enter height" name="height" min="0.5" max="3">
+                    <input type="number" class="form-control" id="height" placeholder="Enter height" name="height" min="0.50" max="3.00" step="0.01">
                 </div>
                 <div class="form-group">
                     <label for="feet_size"><strong>Feet Size</strong></label>
@@ -169,7 +170,7 @@ if (!isset($_SESSION['id'])) {
     <script>
         $("#form").submit(function(e) {
             e.preventDefault();
-            
+
             $.ajax({
                 url: "http://localhost/mycareshoeapi/patient/update_patient_info.php",
                 method: "POST",

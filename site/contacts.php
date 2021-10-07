@@ -14,13 +14,13 @@
    </head>
      <?php
   session_start();
-  
+
 ?>
   <body>
-    
+
   <?php include('header.html')?>
-        
-        
+
+
       <!-- Our team-->
       <section class="section section-md">
         <div class="container">
@@ -30,8 +30,8 @@
               <p class="block-675">We are students from different Masters at the Polytechnic of Porto - School of Engineering</p>
             </div>
           </div>
-            
-            
+
+
           <div class="row row-50 justify-content-center">
             <div class="col-xl-4 col-sm-6 col-10 wow fadeInLeft" data-wow-delay=".3s">
               <div class="team-classic-wrap">
@@ -42,8 +42,8 @@
                   <p>Biomedical Engineering degree</p>
                   <hr class="offset-top-40"/>
                   <ul class="justify-content-center social-links offset-top-30">
-                    <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/carloscarvalhopereira/"></a></li>
-                 
+                    <li><a class="fa fa-linkedin" href="#"></a></li>
+
                   </ul>
                 </div>
               </div>
@@ -58,13 +58,13 @@
                   <hr class="offset-top-40"/>
                   <ul class="justify-content-center social-links offset-top-30">
                     <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/jo%C3%A3ocoelho10/"></a></li>
-                   
+
                   </ul>
                 </div>
               </div>
             </div>
-        
-              
+
+
               <div class="col-xl-4 col-sm-6 col-10 wow fadeInUp" data-wow-delay=".3s">
               <div class="team-classic-wrap">
                 <div class="team-classic-img"><img src="images/profile_photo.jpg" alt="" width="370" height="198"/>
@@ -74,8 +74,8 @@
                   <p>Electrical and Computer Engineering degree</p>
                   <hr class="offset-top-40"/>
                   <ul class="justify-content-center social-links offset-top-30">
-                    <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/luiseppfernandes/"></a></li>
-               
+                    <li><a class="fa fa-linkedin" href="#"></a></li>
+
                   </ul>
                 </div>
               </div>
@@ -89,22 +89,22 @@
                   <p>Electrical and Computer Engineering degree</p>
                   <hr class="offset-top-40"/>
                   <ul class="justify-content-center social-links offset-top-30">
-                    <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/lucília-freitas/"></a></li>
-            
+                    <li><a class="fa fa-linkedin" href="#"></a></li>
+
                   </ul>
                 </div>
               </div>
             </div>
-              
+
           </div>
         </div>
       </section>
-    
-        
-      
-     
+
+
+
+
   <?php include('footer.html')?>
-  
+
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
