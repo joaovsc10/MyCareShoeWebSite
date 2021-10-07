@@ -121,7 +121,6 @@ if (!isset($_SESSION['profile_id'])) {
                 url: "http://localhost/mycareshoeapi/search.php",
                 method: "POST",
                 data: {
-                    patient_number: '<?php echo $_GET['patient_number']; ?>',
                     start_date: start_date_format,
                     end_date: end_date_format,
                     topic: "logs"
