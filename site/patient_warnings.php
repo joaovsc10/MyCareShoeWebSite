@@ -113,7 +113,10 @@ if (!isset($_SESSION['id'])) {
 
     <script>
         $("#form").submit(function(e) {
-            $('#table').toggle();
+
+            $('#table').find("tr:gt(0)").remove();
+            $('#table').show();
+
             var start_date_format = document.getElementById('start_date').value.replace("T", " ");
             var end_date_format = document.getElementById('end_date').value.replace("T", " ");
             e.preventDefault();
@@ -128,7 +131,6 @@ if (!isset($_SESSION['id'])) {
                 },
                 dataType: "JSON",
                 success: function(data) {
-
                     $.each(data['records'], function(index, value) {
 
 
@@ -141,6 +143,13 @@ if (!isset($_SESSION['id'])) {
                         $('#table tr').first().after(html);
                     });
                 }
+                ,
+                 error:function(data)
+           			{
+                   $('#table').hide();
+                   alert("No data found!");
+
+           			}
             })
         });
     </script>

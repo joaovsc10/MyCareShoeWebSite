@@ -87,7 +87,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 $("#form").submit(function(e){
     e.preventDefault();
 
-	$('#1').toggle();
+	$('#1').show();
  });
 
 	</script>
@@ -96,7 +96,6 @@ $("#form").submit(function(e){
 	var array=[cadencePlot, balancePlot, stepsPlot, leftFootPlot, rightFootPlot, leftTemperaturePlot, rightTemperaturePlot, leftHumidityPlot, rightHumidityPlot, leftStancePlot, rightStancePlot];
 
 	$("#form").submit(function(e) {
-
 
 	var arrayPlotName=["cadencePlot", "balancePlot",  "stepsPlot", "leftFootPlot", "rightFootPlot", "leftTemperaturePlot", "rightTemperaturePlot", "leftHumidityPlot", "rightHumidityPlot", "leftStancePlot", "rightStancePlot"];
 	var arrayPlotTitle=["Evolution of cadence over time", "Evolution of balance over time", "Evolution of steps over time", "Evolution of left foot sensors values over time", "Evolution of right foot sensors values over time", "Evolution of left foot temperature values over time", "Evolution of right foot temperature values over time", "Evolution of left foot humidity values over time", "Evolution of right foot humidity values over time", "Evolution of left foot stance time values over time", "Evolution of right foot stance time values over time"]
@@ -268,6 +267,12 @@ var end_date_format = document.getElementById('end_date').value.replace("T", " "
 			success:function(data)
 			{
 			 updateChartData(data);
+     },
+      error:function(data)
+			{
+        $('#1').hide();
+        alert("No data found!");
+
 			}
    })
 
