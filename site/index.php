@@ -3,18 +3,18 @@
   <head>
       <?php
   session_start();
-  if(!isset($_SESSION['id']))
+  if(!isset($_SESSION['profile_id']))
 {
     // restrição para o caso de inserir o endereço sem ter feito login
     header('Location: log_in.php');
     exit();
 }else{
-  if($_SESSION['id']==3){
+  if($_SESSION['profile_id']==3){
     header('Location: admin.php');
     exit();
   }
 
-  if($_SESSION['id']==1){
+  if($_SESSION['profile_id']==1){
     header('Location: log_in.php');
     exit();
   }

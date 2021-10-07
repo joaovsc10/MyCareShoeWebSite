@@ -31,13 +31,13 @@
 </head>
 <?php
 session_start();
-if (!isset($_SESSION['id'])) {
+if (!isset($_SESSION['profile_id'])) {
 
   // restrição para o caso de inserir o endereço sem ter feito login
   header('Location:log_in.php');
   exit();
 }else{
-  if($_SESSION['id']==3){
+  if($_SESSION['profile_id']==3){
       header('Location:index.php');
   exit();
   }
@@ -226,7 +226,7 @@ if (!isset($_SESSION['id'])) {
         },
         dataType: "JSON",
         success: function(data) {
-          alert("Patient's maximum pressure threshold updated!");
+          alert(data.message);
         }
       })
     });

@@ -14,20 +14,20 @@
   </head>
   <?php
   session_start();
-  if(!isset($_SESSION['id']))
+  if(!isset($_SESSION['profile_id']))
 {
-	
+
     // restrição para o caso de inserir o endereço sem ter feito login
     header('Location: user_login.php');
     exit();
 }
 ?>
-    
+
   <body>
-    
+
         <?php include('header.html')?>
-        
-        
+
+
       <section class="section section-intro context-dark">
         <div class="intro-bg" style="background-color:powderblue;" background-position: top center;></div>
         <div class="container">
@@ -39,18 +39,18 @@
           </div>
         </div>
       </section>
-      
-        
- 
-        
-        
+
+
+
+
+
     <?php include('footer.html')?>
 
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-	
-	<script> 
+
+	<script>
 	$(document).ready(function($) {
 
 		$.ajax({

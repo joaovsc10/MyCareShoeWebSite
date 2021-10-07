@@ -26,8 +26,8 @@
             <div class="col-6 col-md-4 wow fadeInUp" data-wow-delay=".3s">
               <P class="footer-classic-title">Quick Links</P>
               <ul class="footer-classic-nav-list">
-			  <?php if(isset($_SESSION['id'])){ ?>
-				<?php if($_SESSION['id']!=3){ ?>
+			  <?php if(isset($_SESSION['profile_id'])){ ?>
+				<?php if($_SESSION['profile_id']!=3){ ?>
                 <li><a href="index.php">My Patients</a></li>
 				<li><a href="settings.php">Account settings</a></li>
 				<?php }else{ ?>
@@ -36,7 +36,7 @@
 				<?php }?>
                 <li><a href="about.php">About My Care Shoe</a></li>
                 <li><a href="contacts.php">Contacts</a></li>
-				<?php if(isset($_SESSION['id'])){ ?>
+				<?php if(isset($_SESSION['profile_id'])){ ?>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="logout.php">Log out</a>
 					  <?php } ?>
               </ul>

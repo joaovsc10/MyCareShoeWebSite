@@ -1,8 +1,8 @@
 <?php
-	    
+
   session_start();
-  
-  if(!isset($_SESSION['id']))
+
+  if(!isset($_SESSION['profile_id']))
 {
     // restrição para o caso de inserir o endereço sem ter feito login
     header('Location: log_in.php');
@@ -24,13 +24,13 @@
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
 
-    
+
   <body>
-    
-	
+
+
 	<?php include('header.html') ?>
-        
-        
+
+
       <section class="section section-intro context-dark">
         <div class="intro-bg" style="background-color:powderblue;" background-position: top center;></div>
         <div class="container">
@@ -42,13 +42,13 @@
           </div>
         </div>
       </section>
-      
-        
+
+
  <!--Caracteristicas-->
-        
-        
+
+
       <section class="section custom-section position-relative section-md">
-       <div class="container wow fadeInLeft"> 
+       <div class="container wow fadeInLeft">
    <h2 class="font-weight-bold">Change your personal data</h2>
    <form id="form" method="post">
    <div class="form-group mt-4">
@@ -66,30 +66,30 @@
      <button type="submit" class="button-width-190 button-primary button-circle button-lg button offset-top-30">Submit</button>
    </form>
  </div>
-                
-                
+
+
       </section>
 
       <?php include('footer.html')?>
-	  
+
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-    
-    <script> 
+
+    <script>
 	$("#form").submit(function(e) {
 e.preventDefault();
 		$.ajax({
     url:"http://localhost/mycareshoeapi/user/update_user_info.php",
     method:"POST",
-    data:{user_id:'<?php echo $_SESSION['id']; ?>', email: document.getElementById('email').value, username: document.getElementById('username').value, password: '<?php echo sha1($_POST['pswd']);?>'},
+    data:{user_id:'<?php echo $_SESSION['id']; ?>', email: document.getElementById('email').value, username: document.getElementById('username').value, password: document.getElementById('pwd').value},
     dataType:"JSON",
     success:function(data)
     {
-     alert(data['message']);
+     alert(data.message);
     }
-   })
-}); 
+	})
+});
 </script>
 
   </body>
