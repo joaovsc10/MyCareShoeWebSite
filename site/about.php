@@ -46,7 +46,7 @@
                 <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
                   <div class="box-default">
                     <div class="box-default-title">Innovative Solutions</div>
-                    <p class="box-default-description">We'll use several areas of Biomedical Engineering, such as Neural Networks and Image Processing and make a diagnosis of your medical images.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"></span>
+                    <p class="box-default-description">We will use several areas of engineering such as Biomedical, Computer Science and Electrical Engineering in order to bring the most innovative solution for the prevention of diabetic ulcers.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"></span>
                   </div>
                 </div>
                 <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
@@ -64,7 +64,7 @@
                 <div class="col-xl-6 wow fadeInUp" data-wow-delay=".5s">
                   <div class="box-default">
                     <div class="box-default-title">Creative Approach</div>
-                    <p class="box-default-description">We'll use several areas of Biomedical Engineering, such as Neural Networks and Image Processing, but also, a health professional. This will guarantee a double diagnosis: human and computerized, thus reducing the error factor. </p><span class="box-default-icon novi-icon icon-lg mercury-icon-partners"></span>
+                    <p class="box-default-description">We will use a method of analysis of the human gait in order to be able to correct mistakes made by the patient which, if systematic, could lead to the appearance of ulcers. </p><span class="box-default-icon novi-icon icon-lg mercury-icon-partners"></span>
                   </div>
                 </div>
 
