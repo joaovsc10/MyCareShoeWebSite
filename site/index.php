@@ -72,16 +72,14 @@ $nomesessao=$_SESSION['username'];
                     <ul class="rd-navbar-nav">
                       <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php">My Patients</a>
                       </li>
-					  <li class="rd-nav-item"><a class="rd-nav-link" href="settings.php">Account settings</a>
+					            <li class="rd-nav-item"><a class="rd-nav-link" href="settings.php">Account settings</a>
                       </li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="about.php">About My Care Shoe</a>
                       </li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.php">Contacts</a>
                       </li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="logout.php">Log out</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="settings.php">Account settings</a>
-                      </li>
+
                     </ul>
                   </div>
                 </div>
