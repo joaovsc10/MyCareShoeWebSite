@@ -14,14 +14,14 @@
   </head>
   <?php
   session_start();
-
+####
 ?>
-    
+
   <body>
-    
+
         <?php include('header.html')?>
-        
-        
+
+
       <section class="section section-intro context-dark">
         <div class="intro-bg" style="background-color:powderblue;" background-position: top center;></div>
         <div class="container">
@@ -33,15 +33,15 @@
           </div>
         </div>
       </section>
-      
-        
+
+
  <!--Caracteristicas-->
-        
-        
+
+
       <section class="section custom-section position-relative section-md">
         <div class="container">
           <div class="row">
-            
+
               <h3 class="text-capitalize devider-left wow fadeInLeft" data-wow-delay=".2s">Why <span class="text-primary"> Choose us</span></h3>
               <div class="row row-15">
                 <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
@@ -68,24 +68,24 @@
                     <p class="box-default-description">We'll use several areas of Biomedical Engineering, such as Neural Networks and Image Processing, but also, a health professional. This will guarantee a double diagnosis: human and computerized, thus reducing the error factor. </p><span class="box-default-icon novi-icon icon-lg mercury-icon-partners"></span>
                   </div>
                 </div>
-                  
-                  
-                  
+
+
+
               </div>
             </div>
         </div>
-          
-        
-          
+
+
+
       </section>
-     
-        
-    
+
+
+
         <!--Counters-->
       <section class="style=background-color:gainsboro;">
         <div class="container section-md">
           <div class="row row-30 text-center">
-           
+
             <div class="col-xl-6 col-sm-6 col-12">
                 <div class="counter-classic">
                 <div class="counter-classic-number"><span class="icon-lg novi-icon offset-right-10 mercury-icon-time"></span><span class="counter text-blue" data-speed="2000">2021</span>
@@ -93,8 +93,8 @@
                 <div class="counter-classic-title">Year of Establishment</div>
               </div>
             </div>
-              
-                         
+
+
             <div class="col-xl-6 col-sm-6 col-12">
               <div class="counter-classic">
                 <div class="counter-classic-number"><span class="icon-lg novi-icon offset-right-10 mercury-icon-group"></span><span class="counter text-blue" data-speed="2000">4</span>
@@ -105,8 +105,8 @@
           </div>
         </div>
       </section>
-        
-        
+
+
     <?php include('footer.html')?>
 
     <div class="snackbars" id="form-output-global"></div>
