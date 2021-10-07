@@ -80,7 +80,7 @@
 	$("#form").submit(function(e) {
 e.preventDefault();
 		$.ajax({
-    url:"http://localhost/mycareshoe/user/update_user_info.php",
+    url:"http://localhost/mycareshoeapi/user/update_user_info.php",
     method:"POST",
     data:{user_id:'<?php echo $_SESSION['id']; ?>', email: document.getElementById('email').value, username: document.getElementById('username').value, password: '<?php echo sha1($_POST['pswd']);?>'},
     dataType:"JSON",

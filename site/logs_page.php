@@ -118,7 +118,7 @@ else{
             var end_date_format = document.getElementById('end_date').value.replace("T", " ");
             e.preventDefault();
             $.ajax({
-                url: "http://localhost/mycareshoe/search.php",
+                url: "http://localhost/mycareshoeapi/search.php",
                 method: "POST",
                 data: {
                     start_date: start_date_format,

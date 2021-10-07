@@ -221,7 +221,7 @@ var end_date_format=end_date.getFullYear()+"-"+(Number(end_date.getMonth())+1)+"
 
 
 		$.ajax({
-			url:"http://localhost/mycareshoe/search.php",
+			url:"http://localhost/mycareshoeapi/search.php",
 			method:"POST",
 			data:{patient_number:'<?php echo $_GET['patient_number']; ?>', start_date:start_date_format, end_date:end_date_format, topic:"statistics"},
 			dataType:"JSON",
@@ -232,7 +232,7 @@ var end_date_format=end_date.getFullYear()+"-"+(Number(end_date.getMonth())+1)+"
    })
    
    $.ajax({
-			url:"http://localhost/mycareshoe/search.php",
+			url:"http://localhost/mycareshoeapi/search.php",
 			method:"POST",
 			data:{patient_number:'<?php echo $_GET['patient_number']; ?>', start_date:start_date_format, end_date:end_date_format, topic:"sensorsReading"},
 			dataType:"JSON",

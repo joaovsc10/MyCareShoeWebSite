@@ -131,7 +131,7 @@ $profile_id = filter_input(INPUT_POST, 'profile_id', FILTER_SANITIZE_STRING);
 
       e.preventDefault();
       $.ajax({
-        url: "http://localhost/mycareshoe/user/update_user_info.php",
+        url: "http://localhost/mycareshoeapi/user/update_user_info.php",
         method: "POST",
         data: {
           user_id: $('#user_id option:selected').val(),

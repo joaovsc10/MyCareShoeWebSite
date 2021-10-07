@@ -54,7 +54,7 @@
 	$(document).ready(function($) {
 
 		$.ajax({
-    url:"http://localhost/mycareshoe/patient_search.php",
+    url:"http://localhost/mycareshoeapi/patient_search.php",
     method:"POST",
     data:{p:'<?php echo $_GET['patient_number']; ?>'},
     dataType:"JSON",

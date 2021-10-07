@@ -142,7 +142,7 @@ if (!isset($_SESSION['id'])) {
         $(document).ready(function($) {
 
             $.ajax({
-                url: "http://localhost/mycareshoe/patient/patient_search.php",
+                url: "http://localhost/mycareshoeapi/patient/patient_search.php",
                 method: "POST",
                 data: {
                     p: '<?php echo $_GET['patient_number']; ?>'
@@ -171,7 +171,7 @@ if (!isset($_SESSION['id'])) {
             e.preventDefault();
             
             $.ajax({
-                url: "http://localhost/mycareshoe/patient/update_patient_info.php",
+                url: "http://localhost/mycareshoeapi/patient/update_patient_info.php",
                 method: "POST",
                 data: {
                     patient_number: '<?php echo $_GET['patient_number']; ?>',

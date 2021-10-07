@@ -90,7 +90,7 @@ session_start();
 		
 
 		$.ajax({
-    url:"http://localhost/mycareshoe/user/registration.php",
+    url:"http://localhost/mycareshoeapi/user/registration.php",
     method:"POST",
     data:{patient_number: document.getElementById('patient_number').value, email: document.getElementById('email').value, username: document.getElementById('username').value, password: '<?php echo sha1($_POST['pswd']);?>'},
     dataType:"JSON",
