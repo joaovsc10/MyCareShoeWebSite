@@ -61,24 +61,24 @@ session_start();
     <div class="container wow fadeInLeft">
       <h2 class="font-weight-bold">Create your account</h2>
       <form id="form" method="post">
-        <div class="form-group">
+        <div class="form-group mt-4">
           <label for="username"><strong>Username</strong></label>
           <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
         </div>
-        <div class="form-group">
+        <div class="form-group mt-4">
           <label for="email"><strong>Email</strong></label>
           <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
         </div>
-        <div class="form-group">
+        <div class="form-group mt-4">
           <label for="pwd"><strong>Password</strong></label>
           <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
         </div>
 
-        <div class="form-group">
+        <div class="form-group mt-4">
           <label for="patient_number"><strong>Patient Number</strong></label>
           <input type="number" class="form-control" id="patient_number" placeholder="Enter patient number" name="patient_number">
         </div>
-        <div class="form-check">
+        <div class="form-check mt-4">
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
           <label class="form-check-label" for="defaultCheck1">
             I agree with data handling
@@ -111,7 +111,7 @@ session_start();
             patient_number: document.getElementById('patient_number').value,
             email: document.getElementById('email').value,
             username: document.getElementById('username').value,
-            password: '<?php echo sha1($_POST['pswd']); ?>'
+            password: document.getElementById('pwd').value
           },
           dataType: "JSON",
           success: function(data) {
@@ -124,7 +124,8 @@ session_start();
         if (document.getElementById('patient_number').value.length != 9) {
           alert("Your patient number must contain 9 digits!");
         }
-        alert("In order to sign up, you have to agree with data handling!");
+        if (!$('#defaultCheck1').is(":checked"))
+          alert("In order to sign up, you have to agree with data handling!");
       }
     });
   </script>

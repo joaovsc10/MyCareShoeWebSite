@@ -68,7 +68,7 @@ if (!isset($_SESSION['profile_id'])) {
   <section class="section custom-section position-relative section-md">
     <div class="container wow fadeInLeft">
       <h3 class="text-capitalize devider-left wow fadeInLeft" data-wow-delay=".2s">Patient's <span class="text-primary"> personal information</span></h3>
-      <div class="row row-40">
+      <div class="row row-40 mt-5">
         <div class="col-xl-4 wow fadeInUp" data-wow-delay=".2s">
           <div class="box-default">
             <div class="box-default-title">Name</div>
@@ -130,30 +130,30 @@ if (!isset($_SESSION['profile_id'])) {
 
 
       </div>
-      <div class="col-xl-4 wow fadeInUp" data-wow-delay="1s">
+      <div class="col-xl-4 wow fadeInUp mt-4" data-wow-delay="1s">
         <a class="button-width-190 button-primary button-circle button-lg button offset-top-30" href="change_patient_info.php?patient_number=<?php echo $_GET['patient_number']; ?>">Edit patient informations</a>
       </div>
     </div>
 
     <div class="container wow fadeInLeft">
-      <div class="row row-50 justify-content-left">
-        <h3 class="text-capitalize devider-left wow fadeInLeft" data-wow-delay=".2s">Warnings <span class="text-primary"> specifications</span></h3>
+      <div class="row row-50 justify-content-left ">
+        <h3 class="text-capitalize devider-left wow fadeInLeft mt-4" data-wow-delay=".2s">Warnings <span class="text-primary"> specifications</span></h3>
       </div>
 
       <form id="form" method="post">
-        <div class="form-group mt-4">
+        <div class="form-group mt-5">
           <label for="hyperpressureValue"><strong>Hyperpressure Value (in kPa)</strong></label>
           <input type="number" class="form-control" id="hyperpressureValue" placeholder="Enter hyperpressure value" name="hyperpressureValue">
         </div>
-        <div class="form-group">
+        <div class="form-group mt-4">
           <label for="occurencesNumber"><strong>Number of occurences needed to create a warning</strong></label>
           <input type="number" class="form-control" id="occurencesNumber" placeholder="Enter occurrences number" name="occurencesNumber">
         </div>
-        <div class="form-group">
+        <div class="form-group mt-4">
           <label for="timeInterval"><strong>Time interval considered (in seconds)</strong></label>
           <input type="number" class="form-control" id="timeInterval" placeholder="Enter the time interval" name="timeInterval">
         </div>
-        <button type="submit" class="button-width-190 button-primary button-circle button-lg button offset-top-30">Submit</button>
+        <button type="submit" class="button-width-190 button-primary button-circle button-lg button offset-top-40">Submit</button>
       </form>
     </div>
   </section>

@@ -84,7 +84,7 @@ $profile_id = filter_input(INPUT_POST, 'profile_id', FILTER_SANITIZE_STRING);
       <br />
       <form method="post" id="form" enctype="multipart/form-data">
 
-        <div class="form-group">
+        <div class="form-group mt-4">
           <label for="user_id"><strong>User ID</strong></label>
           <select name="user_id" class="form-control" id="user_id">
             <?php
@@ -94,7 +94,7 @@ $profile_id = filter_input(INPUT_POST, 'profile_id', FILTER_SANITIZE_STRING);
             ?>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-group mt-4">
           <label for="profile_id"><strong>Profile ID</strong></label>
           <select name="profile_id" class="form-control" id="profile_id">
             <?php
@@ -104,7 +104,7 @@ $profile_id = filter_input(INPUT_POST, 'profile_id', FILTER_SANITIZE_STRING);
             ?>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-group mt-4">
           <label for="access_status"><strong>Access Status</strong></label>
           <select name="access_status" class="form-control" id="access_status">
 

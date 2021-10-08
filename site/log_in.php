@@ -49,8 +49,8 @@
     <div class="container wow fadeInLeft">
       <h2 class="font-weight-bold">Account Login</h2>
       <form id="form" action="http://localhost/mycareshoeapi/user/login.php" method="POST">
-        <label for="username"><strong>Username/E-mail</strong></label>
-        <div class="input-group form-group">
+        <label for="username" class="mt-4"><strong>Username/E-mail</strong></label>
+        <div class="input-group form-group ">
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-user"></i></span>
           </div>
@@ -59,14 +59,12 @@
 
         </div>
 
-        <label for="password"><strong>Password</strong></label>
-        <div class="input-group form-group">
+        <label for="password" class="mt-4"><strong>Password</strong></label>
+        <div class="input-group form-group ">
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-key"></i></span>
           </div>
-
           <input type="password" name="password" class="form-control" placeholder="Enter your password">
-
         </div>
 
         <div class="row row-30 text-center">
