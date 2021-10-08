@@ -65,15 +65,27 @@ if (!isset($_SESSION['profile_id'])) {
     <section class="section section-md bg-xs-overlay " style="background-color:gainsboro;;background-size:cover">
         <div class="container">
 
-            <div class="row row-50 justify-content-center">
-                <form id="form" align-content="center">
-                    <label for="start_end">Choose start and end date:</label>
-                    <input type="datetime-local" id="start_date" name="start_date">
-                    <input type="datetime-local" id="end_date" name="end_date">
-                    <input type="submit" id="submit" value="Search" >
-                </form>
+          <div class="container wow fadeInLeft">
+              <h2 class="text-capitalize devider-left wow fadeInLeft">Search for patient's warnings</h2>
 
-            </div class="row row-50 justify-content-center">
+
+
+    <div class="row row-50 justify-content-center ">
+       <form id="form" align-content="center">
+         <div class="form-group">
+           <label for="start_date"><strong>Start Date</strong></label>
+        <input type="datetime-local" class="form-control" id="start_date" name="start_date" >
+        </div>
+        <div class="form-group">
+          <label for="end_date"><strong>End Date</strong></label>
+        <input type="datetime-local" class="form-control" id="end_date" name="end_date">
+        </div>
+        <div class="form-group">
+        <input type="submit" class="button-width-190 button-primary button-circle button-lg button offset-top-30" id="submit" value="Search">
+        </div>
+      </form>
+
+      </div>
 
 
         </div>
