@@ -36,11 +36,10 @@ if (!isset($_SESSION['profile_id'])) {
     // restrição para o caso de inserir o endereço sem ter feito login
     header('Location:log_in.php');
     exit();
-}
-else{
-    if($_SESSION['profile_id']==2){
+} else {
+    if ($_SESSION['profile_id'] == 2) {
         header('Location:index.php');
-    exit();
+        exit();
     }
 }
 ?>
@@ -145,12 +144,11 @@ else{
                         $('#table tr').first().after(html);
                     });
                 },
-                 error:function(data)
-           			{
-                   $('#table').hide();
-                   alert("No data found!");
+                error: function(data) {
+                    $('#table').hide();
+                    alert("No data found!");
 
-           			}
+                }
             })
         });
     </script>
