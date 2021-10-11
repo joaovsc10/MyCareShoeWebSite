@@ -36,12 +36,12 @@ if (!isset($_SESSION['profile_id'])) {
     // restrição para o caso de inserir o endereço sem ter feito login
     header('Location:log_in.php');
     exit();
-} else {
-    if ($_SESSION['profile_id'] == 3) {
+}else{
+    if($_SESSION['profile_id']==3){
         header('Location:index.php');
-        exit();
+    exit();
     }
-}
+  }
 ?>
 
 
@@ -65,52 +65,52 @@ if (!isset($_SESSION['profile_id'])) {
     <section class="section section-md bg-xs-overlay " style="background-color:gainsboro;;background-size:cover">
         <div class="container">
 
-            <div class="container wow fadeInLeft">
-                <h2 class="text-capitalize devider-left wow fadeInLeft">Search for patient's warnings</h2>
+          <div class="container wow fadeInLeft">
+              <h2 class="text-capitalize devider-left wow fadeInLeft">Search for patient's statistics</h2>
 
 
 
-                <div class="row row-50 justify-content-center ">
-                    <form id="form" align-content="center">
-                        <div class="form-group">
-                            <label for="start_date"><strong>Start Date</strong></label>
-                            <input type="datetime-local" class="form-control" id="start_date" name="start_date">
-                        </div>
-                        <div class="form-group">
-                            <label for="end_date"><strong>End Date</strong></label>
-                            <input type="datetime-local" class="form-control" id="end_date" name="end_date">
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" class="button-width-190 button-primary button-circle button-lg button offset-top-30" id="submit" value="Search">
-                        </div>
-                    </form>
+    <div class="row row-50 justify-content-center ">
+       <form id="form" align-content="center">
+         <div class="form-group">
+           <label for="start_date"><strong>Start Date</strong></label>
+        <input type="datetime-local" class="form-control" id="start_date" name="start_date" >
+        </div>
+        <div class="form-group">
+          <label for="end_date"><strong>End Date</strong></label>
+        <input type="datetime-local" class="form-control" id="end_date" name="end_date">
+        </div>
+        <div class="form-group">
+        <input type="submit" class="button-width-190 button-primary button-circle button-lg button offset-top-30" id="submit" value="Search">
+        </div>
+      </form>
 
-                </div>
+      </div>
 
 
-            </div>
+        </div>
 
-            <div class="container section-sm">
-                <center class="team-classic-img justify-content-center"><img src="images/feet_diagram.png" alt="" style="width:70%; height:20%" />
-                </center>
+        <div class="container section-sm">
+            <center class="team-classic-img justify-content-center"><img src="images/feet_diagram.png" alt="" style="width:70%; height:20%" />
+            </center>
 
-            </div>
-            <div class="container section-md">
+        </div>
+        <div class="container section-md">
 
-                <table class="table table-striped table-bordered" style="display:none" id="table">
-                    <thead>
-                        <tr>
-                            <th>Warning ID</th>
-                            <th>Sensor</th>
-                            <th>Warning Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+            <table class="table table-striped table-bordered" style="display:none" id="table">
+                <thead>
+                    <tr>
+                        <th>Warning ID</th>
+                        <th>Sensor</th>
+                        <th>Warning Date</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-                    </tbody>
-                </table>
+                </tbody>
+            </table>
 
-            </div>
+        </div>
 
 
 
@@ -154,12 +154,14 @@ if (!isset($_SESSION['profile_id'])) {
 
                         $('#table tr').first().after(html);
                     });
-                },
-                error: function(data) {
-                    $('#table').hide();
-                    alert("No data found!");
-
                 }
+                ,
+                 error:function(data)
+           			{
+                   $('#table').hide();
+                   alert("No data found!");
+
+           			}
             })
         });
     </script>

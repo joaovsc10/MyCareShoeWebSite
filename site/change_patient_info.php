@@ -76,11 +76,11 @@ if (!isset($_SESSION['profile_id'])) {
                     <label for="name"><strong>Name</strong></label>
                     <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-4">
                     <label for="patient_number"><strong>Patient Number</strong></label>
                     <input type="number" class="form-control" id="patient_number" placeholder="Enter patient number" name="patient_number">
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-4">
                     <label for="gender"><strong>Gender</strong></label>
                     <select id="gender" class="form-control" name="gender">
                         <option value="0">Select Gender</option>
@@ -89,20 +89,20 @@ if (!isset($_SESSION['profile_id'])) {
                         <option value="Other">Other</option>
                         <select>
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-4">
                     <label for="weight"><strong>Weight (in kilograms)</strong></label>
                     <input type="number" class="form-control" id="weight" placeholder="Enter weight" name="weight" min="20" max="700">
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-4">
                     <label for="height"><strong>Height (in meters)</strong></label>
                     <input type="number" class="form-control" id="height" placeholder="Enter height" name="height" min="0.50" max="3.00" step="0.01">
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-4">
                     <label for="feet_size"><strong>Feet Size</strong></label>
                     <input type="number" class="form-control" id="feet_size" placeholder="Enter feet size" name="feet_size" min="15" max="75">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mt-4">
                     <label for="diabetes"><strong>Diabetes</strong></label>
                     <select id="diabetes" class="form-control" name="diabetes">
                         <option value="0">Select Diabetes Status</option>
@@ -111,7 +111,7 @@ if (!isset($_SESSION['profile_id'])) {
                         <select>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mt-4">
                     <label for="feet_type"><strong>Feet Type</strong></label>
                     <select id="feet_type" class="form-control" name="feet_type">
                         <option value="0">Select Feet Type</option>
@@ -121,7 +121,7 @@ if (!isset($_SESSION['profile_id'])) {
                         <select>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mt-4">
                     <label for="birthdate"><strong>Birthday</strong></label>
                     <input type="date" class="form-control" id="birthdate" placeholder="Enter birthday" name="birthdate">
                 </div>
@@ -129,6 +129,14 @@ if (!isset($_SESSION['profile_id'])) {
                 <button type="submit" class="button-width-190 button-primary button-circle button-lg button offset-top-30">Submit</button>
             </form>
         </div>
+
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
 
 
     </section>
@@ -187,7 +195,8 @@ if (!isset($_SESSION['profile_id'])) {
                 },
                 dataType: "JSON",
                 success: function(data) {
-                    alert(data.message);
+                //  $("#myAlert").fadeIn();
+                    //alert(data.message);
                 }
             })
 
