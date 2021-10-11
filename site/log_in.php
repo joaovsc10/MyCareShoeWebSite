@@ -55,7 +55,7 @@
             <span class="input-group-text"><i class="fas fa-user"></i></span>
           </div>
 
-          <input type="text" class="form-control" placeholder="Enter your username / email" name="usernameEmail">
+          <input type="text" class="form-control" placeholder="Enter your username / email" name="usernameEmail" id="usernameEmail">
 
         </div>
 
@@ -64,7 +64,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-key"></i></span>
           </div>
-          <input type="password" name="password" class="form-control" placeholder="Enter your password">
+          <input type="password" name="password" class="form-control" placeholder="Enter your password" id="password">
         </div>
 
         <div class="row row-30 text-center">
@@ -89,6 +89,11 @@
   <?php include('footer.html') ?>
 
 
+
+  <script src="js/main.js"></script>
+  <!--===============================================================================================-->
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
   <script>
     $("#form").submit(function(e) {
 
@@ -97,20 +102,29 @@
         url: "http://10.8.129.207/mycareshoeapi/user/login.php",
         method: "POST",
         data: {
-          username:document.getElementById('username').value,
+          usernameEmail:document.getElementById('usernameEmail').value,
           password: document.getElementById('password').value
         },
         dataType: "JSON",
         success: function(data) {
-          alert(data.message);
+          switch(data.user.profile_id){
+            case '1':
+              alert("You don't have access. This view is only meant to be accessed by your healthcare professional or the administrator!")
+              break;
+            case '2':
+              window.location.href = 'http://10.8.129.207/mycareshoewebsite/site/index.php';
+              break;
+              case '3':
+                window.location.href = 'http://10.8.129.207/mycareshoewebsite/site/admin.php';
+                break;
+              default:
+              alert("You don't have access");
+              break;
+          }
         }
       })
     });
   </script>
-  <script src="js/main.js"></script>
-  <!--===============================================================================================-->
-  <script src="js/core.min.js"></script>
-  <script src="js/script.js"></script>
 </body>
 
 </html>
