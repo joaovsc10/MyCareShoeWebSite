@@ -105,7 +105,7 @@ session_start();
 
 
         $.ajax({
-          url: "http://localhost/mycareshoeapi/user/registration.php",
+          url: "http://10.8.129.207/mycareshoeapi/user/registration.php",
           method: "POST",
           data: {
             patient_number: document.getElementById('patient_number').value,

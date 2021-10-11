@@ -133,7 +133,7 @@ if (!isset($_SESSION['profile_id'])) {
             var end_date_format = document.getElementById('end_date').value.replace("T", " ");
             e.preventDefault();
             $.ajax({
-                url: "http://localhost/mycareshoeapi/search.php",
+                url: "http://10.8.129.207/mycareshoeapi/search.php",
                 method: "POST",
                 data: {
                     patient_number: '<?php echo $_GET['patient_number']; ?>',

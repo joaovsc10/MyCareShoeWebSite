@@ -14,7 +14,7 @@ if (!isset($_SESSION['profile_id'])) {
 }
 
 
-$connect = mysqli_connect("localhost", "root", "", "mycareshoe");
+$connect = mysqli_connect("10.8.129.207", "root", "", "mycareshoe");
 $query2 = "SELECT * FROM user";
 $result2 = mysqli_query($connect, $query2);
 
@@ -131,7 +131,7 @@ $profile_id = filter_input(INPUT_POST, 'profile_id', FILTER_SANITIZE_STRING);
 
       e.preventDefault();
       $.ajax({
-        url: "http://localhost/mycareshoeapi/user/update_user_info.php",
+        url: "http://10.8.129.207/mycareshoeapi/user/update_user_info.php",
         method: "POST",
         data: {
           user_id: $('#user_id option:selected').val(),

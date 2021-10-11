@@ -96,7 +96,7 @@ if (!isset($_SESSION['profile_id'])) {
     $("#form").submit(function(e) {
       e.preventDefault();
       $.ajax({
-        url: "http://localhost/mycareshoeapi/user/update_user_info.php",
+        url: "http://10.8.129.207/mycareshoeapi/user/update_user_info.php",
         method: "POST",
         data: {
           user_id: '<?php echo $_SESSION['id']; ?>',

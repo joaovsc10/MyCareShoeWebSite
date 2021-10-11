@@ -48,7 +48,7 @@
   <section class="section custom-section position-relative section-md">
     <div class="container wow fadeInLeft">
       <h2 class="font-weight-bold">Account Login</h2>
-      <form id="form" action="http://localhost/mycareshoeapi/user/login.php" method="POST">
+      <form id="form" action="http://10.8.129.207/mycareshoeapi/user/login.php" method="POST">
         <label for="username" class="mt-4"><strong>Username/E-mail</strong></label>
         <div class="input-group form-group ">
           <div class="input-group-prepend">
