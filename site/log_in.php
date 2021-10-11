@@ -48,7 +48,7 @@
   <section class="section custom-section position-relative section-md">
     <div class="container wow fadeInLeft">
       <h2 class="font-weight-bold">Account Login</h2>
-      <form id="form" action="http://10.8.129.207/mycareshoeapi/user/login.php" method="POST">
+      <form id="form" method="POST">
         <label for="username" class="mt-4"><strong>Username/E-mail</strong></label>
         <div class="input-group form-group ">
           <div class="input-group-prepend">
@@ -88,6 +88,25 @@
 
   <?php include('footer.html') ?>
 
+
+  <script>
+    $("#form").submit(function(e) {
+
+      e.preventDefault();
+      $.ajax({
+        url: "http://10.8.129.207/mycareshoeapi/user/login.php",
+        method: "POST",
+        data: {
+          username:document.getElementById('username').value,
+          password: document.getElementById('password').value
+        },
+        dataType: "JSON",
+        success: function(data) {
+          alert(data.message);
+        }
+      })
+    });
+  </script>
   <script src="js/main.js"></script>
   <!--===============================================================================================-->
   <script src="js/core.min.js"></script>
