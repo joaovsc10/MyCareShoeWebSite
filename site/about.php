@@ -105,10 +105,10 @@ session_start();
 </div>
         </div>
 <div class="row row-30 justify-content-center" id="downloadApp">
-        <h3 class="text-capitalize wow fadeInLeft" data-wow-delay=".2s"><span class="text-primary">Download the latest version of the APP</span></h3>
+        <a href="./files/user_manual_app.pdf" style="margin: 0 auto;font-size: 30px;" class="text-primary wow fadeInLeft" data-wow-delay=".2s">Download the latest version of the APP</a>
 </div>
 <div class="row row-30 justify-content-center" id="downloadAppManual">
-<a href="./files/user_manual_app.pdf" style="margin: 0 auto;font-size: 15px;" class="text-capitalize wow fadeInLeft mt-4" data-wow-delay=".2s" download>Download the user guindance manual to APP usage </a>
+<a href="./files/user_manual_app.pdf" style="margin: 0 auto;font-size: 15px;" class="text-primary wow fadeInLeft mt-4" data-wow-delay=".2s" download>Download the user guindance manual to APP usage </a>
 </div>
 </div>
   </section>
