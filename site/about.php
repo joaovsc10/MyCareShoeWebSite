@@ -60,25 +60,25 @@ session_start();
 
         <h3 class="text-capitalize devider-left wow fadeInLeft" data-wow-delay=".2s">Why <span class="text-primary"> Choose us</span></h3>
         <div class="row row-15">
-          <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
+          <div class="col-xl-6 wow fadeInUp mt-4" data-wow-delay=".2s">
             <div class="box-default">
               <div class="box-default-title">Innovative Solutions</div>
               <p class="box-default-description">We will use several areas of engineering such as Biomedical, Computer Science and Electrical Engineering in order to bring the most innovative solution for the prevention of diabetic ulcers.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"></span>
             </div>
           </div>
-          <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
+          <div class="col-xl-6 wow fadeInUp  mt-4" data-wow-delay=".3s">
             <div class="box-default">
               <div class="box-default-title">Strategic Thinking</div>
               <p class="box-default-description">We simply have an intentional and rational thought process that focuses on the analysis of critical factors and variables that will influence the long-term success of our team.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-target-2"></span>
             </div>
           </div>
-          <div class="col-xl-6 wow fadeInUp" data-wow-delay=".4s">
+          <div class="col-xl-6 wow fadeInUp mt-3" data-wow-delay=".4s">
             <div class="box-default">
               <div class="box-default-title">Experienced Team</div>
               <p class="box-default-description">We come from different areas of engineering and along this path we have acquired all the knowledge necessary to carry out this project, in order to guarantee success.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-user"></span>
             </div>
           </div>
-          <div class="col-xl-6 wow fadeInUp" data-wow-delay=".5s">
+          <div class="col-xl-6 wow fadeInUp mt-3" data-wow-delay=".5s">
             <div class="box-default">
               <div class="box-default-title">Creative Approach</div>
               <p class="box-default-description">We will use a method of analysis of the human gait in order to be able to correct mistakes made by the patient which, if systematic, could lead to the appearance of ulcers. </p><span class="box-default-icon novi-icon icon-lg mercury-icon-partners"></span>
@@ -92,10 +92,25 @@ session_start();
     </div>
 
 
+    <div class="container" >
 
+
+        <h3 class="text-capitalize devider-left wow fadeInLeft" data-wow-delay=".2s">My Care Shoe <span class="text-primary"> APP</span></h3>
+</div>
+  <div class="container" style="width:55%; height:55%;" >
+<div class="row row-30 text-center">
+<div class="container section-sm wow fadeInUp " data-wow-delay=".3s">
+        <div class="team-classic-img "><img src="images/app_pictures.png" alt="" style="width:100%; height:100%;" />
+        </div>
+</div>
+        </div>
+<div class="row row-30 text-center">
+        <h3 class="text-capitalize wow fadeInLeft" data-wow-delay=".2s"><span class="text-primary">Download the latest version of the APP</span></h3>
+
+<a href="./files/user_manual_app.pdf" style="margin: 0 auto;font-size: 15px;" class="text-capitalize wow fadeInLeft mt-4" data-wow-delay=".2s" download>Download the user guindance manual to APP usage </a>
+</div>
+</div>
   </section>
-
-
 
   <!--Counters-->
   <section class="style=background-color:gainsboro;">
