@@ -65,51 +65,51 @@ if (!isset($_SESSION['profile_id'])) {
     <section class="section section-md bg-xs-overlay " style="background-color:gainsboro;;background-size:cover">
         <div class="container">
 
-          <div class="container wow fadeInLeft">
-            <h2 class="text-capitalize devider-left wow fadeInLeft">Search for database changes</h2>
+            <div class="container wow fadeInLeft">
+                <h2 class="text-capitalize devider-left wow fadeInLeft">Search for database changes</h2>
 
 
 
-            <div class="row row-50 justify-content-center ">
-              <form id="form" align-content="center">
-                <div class="form-group">
-                  <label for="start_date"><strong>Start Date</strong></label>
-                  <input type="datetime-local" class="form-control" id="start_date" name="start_date">
+                <div class="row row-50 justify-content-center ">
+                    <form id="form" align-content="center">
+                        <div class="form-group">
+                            <label for="start_date"><strong>Start Date</strong></label>
+                            <input type="datetime-local" class="form-control" id="start_date" name="start_date">
+                        </div>
+                        <div class="form-group">
+                            <label for="end_date"><strong>End Date</strong></label>
+                            <input type="datetime-local" class="form-control" id="end_date" name="end_date">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="button-width-190 button-primary button-circle button-lg button offset-top-30" id="submit" value="Search">
+                        </div>
+                    </form>
+
                 </div>
-                <div class="form-group">
-                  <label for="end_date"><strong>End Date</strong></label>
-                  <input type="datetime-local" class="form-control" id="end_date" name="end_date">
-                </div>
-                <div class="form-group">
-                  <input type="submit" class="button-width-190 button-primary button-circle button-lg button offset-top-30" id="submit" value="Search">
-                </div>
-              </form>
+
 
             </div>
 
+            <div class="container section-md">
 
-        </div>
+                <table class="table table-striped table-bordered" style="display:none" id="table">
+                    <thead>
+                        <tr>
+                            <th>Tracking ID</th>
+                            <th>Table name</th>
+                            <th>Data ID</th>
+                            <th>Field</th>
+                            <th>Old Value</th>
+                            <th>New Value</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-        <div class="container section-md">
+                    </tbody>
+                </table>
 
-            <table class="table table-striped table-bordered" style="display:none" id="table">
-                <thead>
-                    <tr>
-                        <th>Tracking ID</th>
-                        <th>Table name</th>
-                        <th>Data ID</th>
-                        <th>Field</th>
-                        <th>Old Value</th>
-                        <th>New Value</th>
-                        <th>Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-
-        </div>
+            </div>
 
 
 

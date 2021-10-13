@@ -102,22 +102,22 @@
         url: "http://10.8.129.207/mycareshoeapi/user/login.php",
         method: "POST",
         data: {
-          usernameEmail:document.getElementById('usernameEmail').value,
+          usernameEmail: document.getElementById('usernameEmail').value,
           password: document.getElementById('password').value
         },
         dataType: "JSON",
         success: function(data) {
-          switch(data.user.profile_id){
+          switch (data.user.profile_id) {
             case '1':
               alert("You don't have access. This view is only meant to be accessed by your healthcare professional or the administrator!")
               break;
             case '2':
               window.location.href = 'http://10.8.129.207/mycareshoewebsite/site/index.php';
               break;
-              case '3':
-                window.location.href = 'http://10.8.129.207/mycareshoewebsite/site/admin.php';
-                break;
-              default:
+            case '3':
+              window.location.href = 'http://10.8.129.207/mycareshoewebsite/site/admin.php';
+              break;
+            default:
               alert("You don't have access");
               break;
           }

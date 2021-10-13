@@ -131,11 +131,11 @@ if (!isset($_SESSION['profile_id'])) {
         </div>
 
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
 
 
 
@@ -195,7 +195,7 @@ if (!isset($_SESSION['profile_id'])) {
                 },
                 dataType: "JSON",
                 success: function(data) {
-                //  $("#myAlert").fadeIn();
+                    //  $("#myAlert").fadeIn();
                     //alert(data.message);
                 }
             })

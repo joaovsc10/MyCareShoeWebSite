@@ -91,28 +91,28 @@ session_start();
       </div>
     </div>
 
-    
 
 
-    <div class="container" >
+
+    <div class="container">
 
 
-        <h3 class="text-capitalize devider-left wow fadeInLeft" data-wow-delay=".2s">My Care Shoe <span class="text-primary"> APP</span></h3>
-</div>
-  <div class="container" style="width:55%; height:55%;" >
-<div class="row row-30 text-center">
-<div class="container section-sm wow fadeInUp " data-wow-delay=".3s">
-        <div class="team-classic-img "><img src="images/app_pictures.png" alt="" style="width:100%; height:100%;" />
+      <h3 class="text-capitalize devider-left wow fadeInLeft" data-wow-delay=".2s">My Care Shoe <span class="text-primary"> APP</span></h3>
+    </div>
+    <div class="container" style="width:55%; height:55%;">
+      <div class="row row-30 text-center">
+        <div class="container section-sm wow fadeInUp " data-wow-delay=".3s">
+          <div class="team-classic-img "><img src="images/app_pictures.png" alt="" style="width:100%; height:100%;" />
+          </div>
         </div>
-</div>
-        </div>
-<div class="row row-30 justify-content-center" id="downloadApp">
+      </div>
+      <div class="row row-30 justify-content-center" id="downloadApp">
         <a href="./files/mycareshoe.apk" style="margin: 0 auto;font-size: 30px;" class="text-primary wow fadeInLeft downloadLink" data-wow-delay=".2s">Download the latest version of the APP</a>
-</div>
-<div class="row row-30 justify-content-center" id="downloadAppManual">
-<a href="./files/user_manual_app.pdf" style="margin: 0 auto;font-size: 15px;" class="text-primary wow fadeInLeft mt-4" data-wow-delay=".2s" download>Download the user guindance manual to APP usage </a>
-</div>
-</div>
+      </div>
+      <div class="row row-30 justify-content-center" id="downloadAppManual">
+        <a href="./files/user_manual_app.pdf" style="margin: 0 auto;font-size: 15px;" class="text-primary wow fadeInLeft mt-4" data-wow-delay=".2s" download>Download the user guindance manual to APP usage </a>
+      </div>
+    </div>
   </section>
 
   <!--Counters-->
@@ -148,20 +148,19 @@ session_start();
   <script src="js/script.js"></script>
 
   <script>
-  $(".downloadLink").click(
-    function(e) {
+    $(".downloadLink").click(
+      function(e) {
         e.preventDefault();
 
         //open download link in new page
-        window.open( $(this).attr("href") );
+        window.open($(this).attr("href"));
 
         //redirect current page to success page
-        window.location="http://10.8.129.207/mycareshoewebsite/site/about.php";
+        window.location = "http://10.8.129.207/mycareshoewebsite/site/about.php";
         window.focus();
-    }
-);
-
-      </script>
+      }
+    );
+  </script>
 
 </body>
 
