@@ -91,6 +91,8 @@ session_start();
       </div>
     </div>
 
+    
+
 
     <div class="container" >
 
@@ -105,7 +107,7 @@ session_start();
 </div>
         </div>
 <div class="row row-30 justify-content-center" id="downloadApp">
-        <a href="./files/user_manual_app.pdf" style="margin: 0 auto;font-size: 30px;" class="text-primary wow fadeInLeft" data-wow-delay=".2s">Download the latest version of the APP</a>
+        <a href="./files/mycareshoe.apk" style="margin: 0 auto;font-size: 30px;" class="text-primary wow fadeInLeft downloadLink" data-wow-delay=".2s">Download the latest version of the APP</a>
 </div>
 <div class="row row-30 justify-content-center" id="downloadAppManual">
 <a href="./files/user_manual_app.pdf" style="margin: 0 auto;font-size: 15px;" class="text-primary wow fadeInLeft mt-4" data-wow-delay=".2s" download>Download the user guindance manual to APP usage </a>
@@ -144,6 +146,22 @@ session_start();
   <div class="snackbars" id="form-output-global"></div>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+  $(".downloadLink").click(
+    function(e) {
+        e.preventDefault();
+
+        //open download link in new page
+        window.open( $(this).attr("href") );
+
+        //redirect current page to success page
+        window.location="http://10.8.129.207/mycareshoewebsite/site/about.php";
+        window.focus();
+    }
+);
+
+      </script>
 
 </body>
 
