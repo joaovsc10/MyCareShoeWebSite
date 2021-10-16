@@ -48,6 +48,18 @@ if (!isset($_SESSION['profile_id'])) {
 
 <body>
 
+  <?php include('header.html') ?>
+    <section class="section section-intro context-dark">
+        <div class="intro-bg" style="background-color:powderblue;" background-position: top center;></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 text-center">
+                    <h1 class="font-weight-bold wow fadeInLeft">Edit patient information</h1>
+                    <p class="intro-description wow fadeInRight"> You can change the personal information of this patient</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
   <?php include('patient_data_form.php') ?>
 
