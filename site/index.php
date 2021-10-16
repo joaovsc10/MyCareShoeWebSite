@@ -187,7 +187,7 @@
                  </div>
 				      -->
           <input class="form-control" id="tableSearchInput" type="text" placeholder="Search...">
-          <table class="table table-striped table-bordered table-hover">
+          <table class="table table-striped table-bordered table-hover mt-4">
             <thead>
               <tr>
                 <th>Patient Number</th>
@@ -196,7 +196,7 @@
                 <th>Name</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="patientsTable">
 
               <?php
 
@@ -231,6 +231,16 @@
       });
     </script>
 
+    <script>
+    $(document).ready(function(){
+      $("#tableSearchInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#patientsTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
 
 
 </body>
