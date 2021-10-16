@@ -38,17 +38,21 @@ session_start();
 
   <?php include('header.html') ?>
 
+  <section class="section section-intro context-dark">
+    <div class="intro-bg" style="background-color:powderblue;" background-position: top center;></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8 text-center">
+          <h1 class="font-weight-bold wow fadeInLeft">Meet Our Team</span></h1>
+          <p class="intro-description wow fadeInRight"> We are students from different Masters at the Polytechnic of Porto - School of Engineering</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Our team-->
   <section class="section section-md">
     <div class="container">
-      <div class="row row-50 justify-content-center">
-        <div class="col-md col-12 text-center">
-          <h3 class="wow fadeInLeft text-capitalize" data-wow-delay=".3s">Meet Our <span class="text-primary"> Team</span></h3>
-          <p class="block-675">We are students from different Masters at the Polytechnic of Porto - School of Engineering</p>
-        </div>
-      </div>
-
 
       <div class="row row-50 justify-content-center">
         <div class="col-xl-4 col-sm-6 col-10 wow fadeInLeft" data-wow-delay=".3s">

@@ -1,17 +1,5 @@
-<?php include('header.html') ?>
 
 
-<section class="section section-intro context-dark">
-    <div class="intro-bg" style="background-color:powderblue;" background-position: top center;></div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-8 text-center">
-                <h1 class="font-weight-bold wow fadeInLeft">My Care Shoe</h1>
-                <p class="intro-description wow fadeInRight"> We want to help you, we will analyze your patient's sensor readings, and guide you to a better diagnose</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 <!--Caracteristicas-->
