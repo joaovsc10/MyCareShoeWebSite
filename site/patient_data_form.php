@@ -19,7 +19,7 @@
 
 <section class="section custom-section position-relative section-md">
     <div class="container wow fadeInLeft">
-        <h2 class="font-weight-bold">Add a new patient</h2>
+        <h2 class="font-weight-bold">Patient Information</h2>
         <form id="form" method="post">
             <div class="form-group mt-4">
                 <label for="name"><strong>Name</strong></label>
@@ -73,6 +73,16 @@
             <div class="form-group mt-4">
                 <label for="birthdate"><strong>Birthday</strong></label>
                 <input type="date" class="form-control" id="birthdate" placeholder="Enter birthday" name="birthdate">
+            </div>
+
+            <div class="form-group mt-4">
+              <label for="access_status"><strong>Access Status</strong></label>
+              <select name="access_status" class="form-control" id="access_status">
+
+                <option value="1">Enable access</option>';
+                <option value="0">Disable access</option>';
+
+              </select>
             </div>
 
             <button type="submit" class="button-width-190 button-primary button-circle button-lg button offset-top-30">Submit</button>

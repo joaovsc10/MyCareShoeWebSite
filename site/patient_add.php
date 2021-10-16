@@ -60,7 +60,7 @@ if (!isset($_SESSION['profile_id'])) {
                 url: "http://10.8.129.207/mycareshoeapi/patient/update_patient_info.php",
                 method: "POST",
                 data: {
-                    patient_number: '<?php echo $_GET['patient_number']; ?>',
+                    patient_number: document.getElementById('patient_number').value,
                     name: document.getElementById('name').value,
                     gender: document.getElementById('gender').value,
                     weight: document.getElementById('weight').value,
@@ -73,20 +73,21 @@ if (!isset($_SESSION['profile_id'])) {
                 dataType: "JSON",
                 success: function(data) {
                     //  $("#myAlert").fadeIn();
-                    alert(data.message);
+
                     $.ajax({
                       url: "http://10.8.129.207/mycareshoeapi/user/update_user_info.php",
                       method: "POST",
                       data: {
-                        patient_number: '<?php echo $_GET['patient_number']; ?>',
+                        patient_number: document.getElementById('patient_number').value,
                         profile_id: 1,
-                        access_permission: 1
+                        access_permission: access_permission: $('#access_status option:selected').val()
                       },
                       dataType: "JSON",
                       success: function(data) {
-                        alert("Permissions updated!");
+
                       }
                     })
+                    alert(data.message);
                 }
             })
 
