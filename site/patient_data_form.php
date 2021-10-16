@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-
-
->>>>>>> e186df2316cc5a5519e7076bea2560e8ed1d5fda
 
 
 <!--Caracteristicas-->
