@@ -110,7 +110,6 @@ if (!isset($_SESSION['profile_id'])) {
                       },
                       dataType: "JSON",
                       success: function(data) {
-                        alert(data.message);
                       }
                     })
                     alert(data.message);
