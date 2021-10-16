@@ -186,6 +186,7 @@
 
                  </div>
 				      -->
+          <input class="form-control" id="tableSearchInput" type="text" placeholder="Search...">
           <table class="table table-striped table-bordered table-hover">
             <thead>
               <tr>
