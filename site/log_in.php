@@ -2,6 +2,27 @@
 <html class="wide wow-animation" lang="en">
 
 <head>
+  <?php
+  session_start();
+  if (isset($_SESSION['profile_id'])) {
+
+    if ($_SESSION['profile_id'] == 3) {
+      header('Location: admin.php');
+      exit();
+    }
+
+    if ($_SESSION['profile_id'] == 1) {
+      header('Location: log_in.php');
+      exit();
+    }
+
+    if ($_SESSION['profile_id'] == 2) {
+      header('Location: index.php');
+      exit();
+    }
+  }
+
+  ?>
   <title>Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
