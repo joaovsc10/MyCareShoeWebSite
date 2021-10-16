@@ -87,7 +87,10 @@
               <div class="rd-navbar-main-element">
                 <div class="rd-navbar-nav-wrap">
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php">My Patients</a>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php">All patients</a>
+                    </li>
+
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="patient_add.php">Add a patient</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="settings.php">Account settings</a>
                     </li>

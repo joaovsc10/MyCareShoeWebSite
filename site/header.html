@@ -41,7 +41,10 @@
                 <ul class="rd-navbar-nav">
                   <?php if(isset($_SESSION['profile_id'])){ ?>
                   <?php if($_SESSION['profile_id']!=3){ ?>
-                  <li class="rd-nav-item"><a class="rd-nav-link" href="index.php">My patients</a>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="index.php">All patients</a>
+                  </li>
+
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="patient_add.php">Add a patient</a>
                   </li>
 
                   <li class="rd-nav-item"><a class="rd-nav-link" href="settings.php">Account settings</a>
