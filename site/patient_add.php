@@ -74,6 +74,19 @@ if (!isset($_SESSION['profile_id'])) {
                 success: function(data) {
                     //  $("#myAlert").fadeIn();
                     alert(data.message);
+                    $.ajax({
+                      url: "http://10.8.129.207/mycareshoeapi/user/update_user_info.php",
+                      method: "POST",
+                      data: {
+                        patient_number: '<?php echo $_GET['patient_number']; ?>',
+                        profile_id: 1,
+                        access_permission: 1
+                      },
+                      dataType: "JSON",
+                      success: function(data) {
+                        alert("Permissions updated!");
+                      }
+                    })
                 }
             })
 
