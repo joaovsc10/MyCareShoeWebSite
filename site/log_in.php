@@ -128,6 +128,9 @@
         },
         dataType: "JSON",
         success: function(data) {
+          if(data.success==0)
+            alert(data.message);
+          else{
           switch (data.user.profile_id) {
             case '1':
               alert("You don't have access. This view is only meant to be accessed by your healthcare professional or the administrator!")
@@ -142,6 +145,8 @@
               alert("You don't have access");
               break;
           }
+
+        }
         }
       })
     });
