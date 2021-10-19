@@ -110,7 +110,10 @@ session_start();
         <a href="./files/mycareshoe.apk" style="margin: 0 auto;font-size: 30px;" class="text-primary wow fadeInLeft downloadLink" data-wow-delay=".2s">Download the latest version of the APP</a>
       </div>
       <div class="row row-30 justify-content-center" id="downloadAppManual">
-        <a href="./files/user_manual_app.pdf" style="margin: 0 auto;font-size: 15px;" class="text-primary wow fadeInLeft mt-4 downloadLink" data-wow-delay=".2s" download>Download the user guindance manual to APP usage </a>
+        <a href="./files/user_manual_app.pdf" style="margin: 0 auto;font-size: 15px;" class="text-primary wow fadeInLeft mt-4 downloadLink" data-wow-delay=".2s" download>Download the user guindance manual to android application usage </a>
+      </div>
+      <div class="row row-30 justify-content-center" id="downloadWebManual">
+        <a href="./files/user_manual_web.pdf" style="margin: 0 auto;font-size: 15px;" class="text-primary wow fadeInLeft mt-4 downloadLink" data-wow-delay=".2s" download>Download the user guindance manual to web application usage </a>
       </div>
     </div>
   </section>
