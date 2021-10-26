@@ -66,7 +66,7 @@ if (!isset($_SESSION['profile_id'])) {
   <section class="section custom-section position-relative section-md">
     <div class="container wow fadeInLeft">
       <h2 class="font-weight-bold">Change your personal data</h2>
-      <form id="form " method="post">
+      <form id="form" method="post">
         <div class="form-group mt-4">
           <label for="username"><strong>Username</strong></label>
           <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
