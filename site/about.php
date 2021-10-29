@@ -115,6 +115,10 @@ session_start();
       <div class="row row-30 justify-content-center" id="downloadWebManual">
         <a href="./files/user_manual_web.pdf" style="margin: 0 auto;font-size: 15px;" class="text-primary wow fadeInLeft mt-4 downloadLink" data-wow-delay=".2s" download>Download the user guindance manual to web application usage </a>
       </div>
+
+      <div class="row row-30 justify-content-center" id="downloadTestApp">
+        <a href="./files/mycareshoeTester.apk" style="margin: 0 auto;font-size: 15px;" class="text-primary wow fadeInLeft mt-4 downloadLink" data-wow-delay=".2s" download>Download the latest version of the My Care Shoe testing APP </a>
+      </div>
     </div>
   </section>
 
